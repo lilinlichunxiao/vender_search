@@ -1,0 +1,89 @@
+<!-- <%@ page contentType="text/html;charset=UTF-8" language="java" %> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>印刷画面②</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- 引入JQuery  bootstrap.js-->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+   		<div class="container">
+   			<div class="col-sm-8">
+   			<h5 id="word">(お振込み先確認用)</h5>
+   			<table class="table table-bordered">
+   				<tr>
+   					<td class="col-sm-2">ご氏名又はご施設名</td>
+   					<td class="col-sm-6"></td>
+   				</tr>
+   			</table>
+   			</div>
+   			<div class="col-sm-8">
+   			<table class="table table-bordered">
+   				<tr>
+   					<td colspan="2" class="col-sm-4">〒</td>
+  					<td class="col-sm-4"></td>
+   				</tr>
+   				<tr>
+ 					 <td rowspan="3" class="col-sm-2">ご住所</td>
+ 					 <td class="col-sm-2">(都道府県)</td>
+ 					 <td class="col-sm-4"></td>
+				</tr>
+				<tr>
+					<td class="col-sm-2">(市区郡)</td>
+					<td class="col-sm-4"></td>
+				</tr>
+				<tr>
+					<td class="col-sm-2">(町村・番地)</td>
+					<td class="col-sm-4"></td>
+				</tr>
+   			</table>
+   			</div>
+   			<div class="col-sm-8">
+   			<table class="table table-bordered">
+   				<tr>
+ 					 <td rowspan="5" class="col-sm-2">お振込み先</td>
+ 					 <td class="col-sm-2">金融機関/支店コード</td>
+ 					 <td class="col-sm-4"></td>
+				</tr>
+				<tr>
+					<td class="col-sm-2">金融機関/支店名</td>
+					<td class="col-sm-4"></td>
+				</tr>
+				<tr>
+					<td class="col-sm-2">預金種別</td>
+					<td class="col-sm-4"></td>
+				</tr>
+				<tr>
+					<td class="col-sm-2">口座番号</td>
+					<td class="col-sm-4"></td>
+				</tr>
+				<tr>
+					<td class="col-sm-2">口座名義</td>
+					<td class="col-sm-4"></td>
+				</tr>
+   			</table>
+   			</div>
+   			<div class="col-sm-8">
+   			<h5>＜　弊社使用欄　＞</h5>
+   			<table class="table table-bordered">
+   				<tr>
+   					<td colspan="2" class="col-sm-2">B / D コード</td>
+  					<td class="col-sm-6"></td>
+   				</tr>
+   				<tr>
+   					<td colspan="2" class="col-sm-2">ベンダーコード-Banktype</td>
+  					<td class="col-sm-6"></td>
+   				</tr>
+   			</table>
+   			<h3 id="word">※個人情報につき、取扱注意！！</h3>
+   			<button type="button" class="btn btn-secondary btn-sm" onClick="window.print()">印刷</button><br><br>
+   			</div>
+   		</div>
+</body>
+</html>

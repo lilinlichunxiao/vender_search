@@ -1,0 +1,334 @@
+<!-- <%@ page contentType="text/html;charset=UTF-8" language="java" %> -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>印刷画面①</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- 引入JQuery  bootstrap.js-->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+   		<div class="container">
+   			<div class="row">
+			<div class="col-sm-8" id="vendor_div">
+			<h3 id="word">Vendor Master</h3>
+			<table class="table table-bordered">
+				<tr>
+  					<td class="col-sm-2">Vendor No.</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">仕入先番号</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Account.Group</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">勘定ｸﾞﾙｰﾌﾟ</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+			</table>
+			<span>【General Data】</span>
+			<table class="table table-bordered">
+				<tr>
+  					<td class="col-sm-2">International Version</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">国際ﾊﾞｰｼﾞｮﾝ</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Name1</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">名称 1</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Name2</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">名称 2</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Name3</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">名称 3</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Name4</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">名称 4</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Post Code</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">郵便番号</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Region</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">都道府県ｺｰﾄﾞ</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">City</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">市区郡</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Street</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">所在地</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">District</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">地名</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Search Term1</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">検索語句 1</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Search Term2</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">検索語句 2</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Country</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">国</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Language</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">言語</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Telephone No.</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">電話</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">FAX No.</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">FAX</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">E-mail Add.</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">電子ﾒｰﾙ</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Trading Part.</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">取引先ｸﾞﾙｰﾌﾟ会社</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Bank Country</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">銀行国</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Bank Key</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">銀行/支店ｺｰﾄﾞ</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Bank Name</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">銀行/支店名</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Bank Cont.Key</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">預金種別</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Bank Acc. No.</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">銀行口座番号</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Account Name</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">口座名義</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Instruction Key</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">振込手数料区分</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Deletion Flag</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">削除</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Central Posting Block</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">転記ﾌﾞﾛｯｸ</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Authorization Group</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">権限ｸﾞﾙｰﾌﾟ</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Purchasing Block</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">会計管理購買ﾌﾞﾛｯｸ</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+			</table>
+			</div>
+			<div class="col-sm-8" id="vendor_div">
+			<h3 id="word">Vendor Master</h3>
+			<table class="table table-bordered">
+				<tr>
+  					<td class="col-sm-2">Vendor No.</td>
+  					<td class="col-sm-2"></td>
+  					<td class="col-sm-2">仕入先番号</td>
+  					<td class="col-sm-2"></td>
+				</tr>
+				<tr>
+  					<td class="col-sm-2">Account.Group</td>
+  					<td class="col-sm-2"></td>
+					<td class="col-sm-2">勘定ｸﾞﾙｰﾌﾟ</td>
+  					<td class="col-sm-2"></td>  					
+				</tr>
+			</table>
+			</div>
+			<div class="col-sm-9">
+			<span>【Company Code Data】</span>
+			<table class="table table-bordered" >
+				<tr id="tr_company">
+					<td>Deletion<br>Flag<br>削除</td>
+					<td>Posting<br>Block<br>転記ﾌﾞﾛｯｸ</td>
+					<td>Company<br>Code<br>会社ｺｰﾄﾞ</td>
+					<td>Reconciliation<br>Account<br>統制勘定</td>
+					<td>Terms of<br>Payment<br>支払条件(会社)</td>
+					<td>Check flag for<br>Double Invo.<br>二重請求確認</td>
+					<td>Payment<br>Method<br>支払方法</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			</div>
+			<div class="col-sm-9">
+			<table class="table table-bordered" >
+				<tr id="tr_company">
+					<td>Previous<br>Account<br>施設/医師ｺｰﾄﾞ</td>
+					<td>Personal<br>No.<br>従業員番号</td>
+					<td>Withholding<br>Tax Country<br>源泉税国</td>
+					<td>Withholding<br>Tax Type<br>源泉税ﾀｲﾌﾟ</td>
+					<td>Withholding<br>Tax code<br>源泉税ｺｰﾄﾞ</td>
+					<td>Withholding<br>Check Liable<br>課税対象ﾌﾗｸﾞ</td>
+					<td>Payment<br>Block<br>支払保留ｷｰ</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+			</div>
+			<div class="col-sm-12">
+			<span>【Purchasing Organization Code Data】</span>
+			<table class="table table-bordered">
+		  <tbody>
+		    <tr id="tr_purchasing">
+		      <td rowspan="2">Deletion<br>Flag<br>削除</td>
+		      <td rowspan="2">Purchasing Block<br>購買ﾌﾞﾛｯｸ</td>
+		      <td rowspan="2">Purchasing<br>Organization<br>購買組織</td>
+		      <td rowspan="2">Terms of<br>Payment<br>支払条件(購買)</td>
+			  <td rowspan="2">Order<br>Currency<br>通貨</td>
+			  <td rowspan="2">GR-based<br>Inv.Verf.<br>入庫基準請求</td>
+			  <td rowspan="2">Automatic<br>Per.Order<br>自動購買発注</td>
+			  <td colspan="2">Incoterms<br>ｲﾝｺﾀｰﾑｽﾞ</td>
+			  <td rowspan="2">Order Entry<br>by Vendor<br>受注入力</td>
+		    </tr>
+		    <tr id="tr_purchasing">
+		    <td>1</td>
+		    <td>2</td>
+		    </tr>
+		    <tr>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    <td></td>
+		    </tr>
+		  </tbody>
+		</table>
+			</div>
+			<div class="col-sm-11">
+			<table class="table table-bordered">
+		  <tbody>
+		    <tr id="tr_partner">
+		      <td>Purchasing<br>Organization<br>購買組織</td>
+		      <td>Partner<br>Function ID<br>取引先機能ｺｰﾄﾞ</td>
+		      <td>Partner F.<br>Counter<br>ｶｳﾝﾀNo.</td>
+			  <td>Reference To<br>Other Vendor<br>取引先機能仕入先参照</td>
+			  <td>Vendor<br>Name<br>取引先名称1</td>
+			  <td>Vendor<br>Name<br>取引先名称1（K）</td>
+		    </tr>
+		    <tr>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		      <td></td>
+		    </tr>
+		  </tbody>
+		</table>
+		</div>
+		</div>
+		<button type="button" class="btn btn-secondary btn-sm" onClick="window.print()">印刷</button><br><br>
+	</div>
+</body>
+</html>

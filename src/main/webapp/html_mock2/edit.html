@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>編集画面</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 引入bootstrap -->
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- 引入JQuery  bootstrap.js-->
+	<script src="../js/jquery-3.2.1.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+			<div class="col-sm-12" style="margin-top: 50px; margin-left: 2px;">
+			<button type="button" class="btn btn-primary btn-sm">Save</button>
+			<button type="button" class="btn btn-primary btn-sm">Save&Download</button>
+			<button type="button" class="btn btn-primary btn-sm" onClick="window.location.href='first.html'">Cancel</button>
+			<button type="button" class="btn btn-primary btn-sm">再Download</button>
+			<button type="button" class="btn btn-primary btn-sm">Vendor Master検索</button>
+
+			<h3 style="color:green;" class="pull-right">支払調書入力</h3>
+			<div class="section" style="height:50px;"></div>
+			<div class="row col-sm-8">
+			<table class="table table-bordered" id="pay_table">
+			  <tbody>
+			    <tr>
+			      <td class="col-sm-3">ベンダーコード</td>
+			      <td class="col-sm-5"><input type="text" class="form-control" value="000000000000"></td>
+			    </tr>
+			    <tr>
+			      <td class="col-sm-3">郵便番号</td>
+			      <td class="col-sm-5">000000</td>
+			    </tr>
+			    <tr>
+			      <td class="col-sm-3">住所</td>
+			      <td class="col-sm-5"><input type="text" class="form-control" value="大阪府"><br>
+			      <input type="text" class="form-control" value="堺市南区"><br>
+			      <input type="text" class="form-control" value="1-2-3"></td>
+			    </tr>
+			    <tr>
+			      <td class="col-sm-3">医師名</td>
+			      <td class="col-sm-5">張　満</td>
+			    </tr>
+			    <tr>
+			      <td class="col-sm-3">お問い合わせNo.</td>
+			      <td class="col-sm-3"><input type="text" class="form-control" value="「A0041」-00000000-123-「1234」"></td>
+			    </tr>
+			  </tbody>
+			</table>
+			</div>
+			<div class="row col-sm-12">
+			<table class="table table-bordered">
+			  <tbody>
+			    <tr id="pay_tr">
+			      <td class="col-sm-2">支払区分</td>
+			      <td class="col-sm-2">支払日</td>
+			      <td class="col-sm-2">支払金額</td>
+			      <td class="col-sm-2">源泉徴収税額</td>
+				  <td class="col-sm-2">差引金額</td>
+				  <td class="col-sm-2">備考</td>
+			    </tr>
+			    <tr>
+			      <td><select class="form-control">
+						<option>講演謝礼</option>
+						<option>講演謝礼</option>
+						</select>
+				  </td><!-- 下拉列表 -->
+			      <td><input type="text" class="form-control" value="2010/02/09"></td><!-- 日期 -->
+			      <td><input type="text" class="form-control" value="166,666"></td>
+			      <td><input type="text" class="form-control" value="166,666"></td>
+			      <td>150000</td>
+			      <td><input type="text" class="form-control" value="7100001002"></td>
+			    </tr>
+			    <tr>
+			      <td><select class="form-control">
+						<option>講演謝礼</option>
+						<option>講演謝礼</option>
+						</select></td>
+			      <td><input type="date"/></td>
+			      <td><input type="text" class="form-control"></td>
+			      <td><input type="text" class="form-control"></td>
+			      <td><input type="text" class="form-control"></td>
+			      <td><input type="text" class="form-control"></td>
+			    </tr>
+			  </tbody>
+			</table>
+			</div>
+			<div class="row col-sm-12">
+				<div class="col-sm-2">
+					<input type="text" class="form-control" value="2010">
+				</div>
+				<div class="col-sm-10">
+					<h5>年分報酬、料金、契約金および賞金の支払調書</h5>
+				</div>
+			</div>
+			<div class="row col-sm-10">
+			<table class="table table-bordered">
+			  <tbody>
+			    <tr>
+			    	<td rowspan="2" id="pay_td" class="col-sm-2">支払を<br>受ける者</td>
+			    	<td id="pay_td" class="col-sm-2">住所又は<br>所在地</td>
+			    	<td colspan="3" class="col-sm-6">678-879<br><input type="text" class="form-control" value="「大阪XXXXXXXX」"></td>
+			    </tr>
+			    <tr>
+			      <td id="pay_td" class="col-sm-2">氏名(名称)</td>
+			      <td colspan="3" class="col-sm-6">張　満</td>
+			    </tr>
+			    <tr id="pay_tr">
+			      <td colspan="2" class="col-sm-3">区分</td>
+			      <td class="col-sm-3">細目</td>
+			      <td class="col-sm-2">支払金額</td>
+			      <td class="col-sm-2">源泉徴収<br>税額</td>
+			    </tr>
+			    <tr>
+			      <td colspan="2" class="col-sm-3"><select class="form-control">
+						<option>講演謝礼</option>
+						<option>講演謝礼</option>
+						</select></td>
+			      <td class="col-sm-3">A0041-00000000-123-1234</td>
+			      <td class="col-sm-2">312,232</td>
+			      <td class="col-sm-2">152,168</td>
+			    </tr>
+			  </tbody>
+			</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
